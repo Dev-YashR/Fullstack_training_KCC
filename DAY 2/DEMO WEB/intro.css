@@ -1,0 +1,137 @@
+:root {
+    --google-blue: #4285F4;
+    --google-red: #EA4335;
+    --bg-white: #ffffff;
+    --google-gray: #3c4043;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-white);
+    overflow: hidden;
+}
+
+/* --- Navigation & Buttons --- */
+.glass-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures logo and links align vertically */
+    padding: 20px 5%;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 90%;
+    z-index: 100;
+}
+
+.logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: var(--google-blue); 
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--google-gray);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 10px 24px;
+    border-radius: 25px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+}
+
+/* About Button Style */
+.nav-links a[href="about.html"] {
+    background: rgba(66, 133, 244, 0.05);
+    border: 1px solid rgba(66, 133, 244, 0.1);
+}
+
+/* Contact Button Style */
+.nav-links a[href="contact.html"] {
+    background: var(--google-blue);
+    color: white;
+}
+
+/* Nav Hover Effects */
+.nav-links a:hover {
+    transform: translateY(-2px);
+}
+
+.nav-links a[href="about.html"]:hover {
+    background: rgba(66, 133, 244, 0.1);
+    border-color: var(--google-blue);
+}
+
+.nav-links a[href="contact.html"]:hover {
+    background: #1a73e8;
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.highlight { color: var(--google-blue); }
+
+.cta-btn {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    background: var(--google-blue);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cta-btn:hover { 
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(66, 133, 244, 0.3); 
+}
+
+/* --- Animated Background Blobs --- */
+.blob-container {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1;
+    filter: blur(80px);
+}
+
+.blob {
+    position: absolute;
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    animation: move 20s infinite alternate ease-in-out; /* Fixed: Added opening brace and time */
+}
+
+.blue { background: rgba(66, 133, 244, 0.2); top: 10%; left: 10%; }
+.red { background: rgba(234, 67, 53, 0.15); bottom: 10%; right: 10%; }
+
+/* --- Animations --- */
+@keyframes fadeInUp { 
+    from { opacity: 0; transform: translateY(30px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+@keyframes move {
+    from { transform: translate(0, 0); }
+    to { transform: translate(100px, 50px); }
+}

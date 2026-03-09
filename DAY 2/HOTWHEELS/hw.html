@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Wheels | Premium E-Commerce & Customization</title>
+    <meta name="description"
+        content="Buy, compare, and resell Hot Wheels models. Experience real-time 3D customization and exclusive drops for Wheelerz members.">
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hw.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-hot">HOT</span><span class="logo-wheels">WHEELS</span><span class="logo-dot">.</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#customizer">Customizer</a></li>
+                <li><a href="#drops">Exclusive Drops</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#wheelerz" class="btn-primary btn-sm">Join Wheelerz</a>
+                <button class="icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="icon-btn" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i><span
+                        class="cart-badge">2</span></button>
+                <button class="icon-btn" aria-label="Profile"><i class="fa-regular fa-user"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-overlay" style="z-index: 1;"></div>
+            <!-- Real F1 / Open Wheel Racing Video Background -->
+            <video autoplay loop muted playsinline class="hero-video" style="z-index: 0; opacity: 0.6;">
+                <!-- High-quality free royalty free video of formula/open-wheel racing -->
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-formula-1-race-car-on-track-42006-large.mp4"
+                    type="video/mp4">
+            </video>
+            <!-- Fallback image -->
+            <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?q=80&w=2000&auto=format&fit=crop"
+                alt="Premium Hot Wheels Hero" class="hero-image" style="display: none;">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">ENGINEERED FOR <br><span class="text-gradient">COLLECTORS.</span></h1>
+            <p class="hero-subtitle">Buy, verify, resell, and customize 1:64 scale masterpieces in true 3D. Join the
+                Wheelerz club for ultra-rare drops.</p>
+            <div class="hero-cta">
+                <a href="#shop" class="btn-primary">Explore Showroom</a>
+                <a href="#customizer" class="btn-outline"><i class="fa-solid fa-wand-magic-sparkles"></i> 3D
+                    Customizer</a>
+            </div>
+
+            <!-- Floating Hero element mimicking a 3D interface -->
+            <div class="glass-panel floating-stats">
+                <div class="stat">
+                    <span class="stat-val">1.2k+</span>
+                    <span class="stat-label">Models</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-val">True</span>
+                    <span class="stat-label">3D View</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-val">24h</span>
+                    <span class="stat-label">Next Drop</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Collaborator Marquee -->
+    <section class="collaborators">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <!-- Logos via Font Awesome and text styled as logos for placeholder -->
+                <div class="collab-brand">BIG BOYS TOYS</div>
+                <div class="collab-brand"><i class="fa-brands fa-bmw"></i> BMW</div>
+                <div class="collab-brand">MERCEDES-BENZ</div>
+                <div class="collab-brand">FERRARI</div>
+                <div class="collab-brand">LAMBORGHINI</div>
+                <div class="collab-brand">ROLLS ROYCE</div>
+                <div class="collab-brand">FORD</div>
+                <div class="collab-brand">MITSUBISHI</div>
+
+                <!-- Duplicate for seamless scrolling -->
+                <div class="collab-brand">BIG BOYS TOYS</div>
+                <div class="collab-brand"><i class="fa-brands fa-bmw"></i> BMW</div>
+                <div class="collab-brand">MERCEDES-BENZ</div>
+                <div class="collab-brand">FERRARI</div>
+                <div class="collab-brand">LAMBORGHINI</div>
+                <div class="collab-brand">ROLLS ROYCE</div>
+                <div class="collab-brand">FORD</div>
+                <div class="collab-brand">MITSUBISHI</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Drops / Shop -->
+    <section id="drops" class="featured-section">
+        <div class="section-header">
+            <h2 class="section-title">LIMITED <span class="text-orange">DROPS</span>.</h2>
+            <div class="countdown">
+                <span>Next drop in: </span>
+                <span class="timer">18:42:09</span>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <div class="badge">Wheelerz Exclusive</div>
+                    <!-- Fixed realistic sports car image -->
+                    <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?q=80&w=600&auto=format&fit=crop"
+                        alt="Red Hot Wheels Sports Car" loading="lazy">
+                    <div class="card-overlay">
+                        <button class="action-btn" title="View 3D"><i class="fa-solid fa-cube"></i></button>
+                        <button class="action-btn" title="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="brand">Custom</p>
+                    <h3 class="model-name">Twin Mill Spectraflame Red</h3>
+                    <div class="card-footer">
+                        <span class="price">$120.00</span>
+                        <button class="add-to-cart"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <div class="badge badge-hot">Auction Live</div>
+                    <img src="https://images.unsplash.com/photo-1596406540307-5ffeb7ca8bba?q=80&w=600&auto=format&fit=crop"
+                        alt="Blue Diecast Muscle Car" loading="lazy">
+                    <div class="card-overlay">
+                        <button class="action-btn" title="View 3D"><i class="fa-solid fa-cube"></i></button>
+                        <button class="action-btn" title="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="brand">Chevrolet</p>
+                    <h3 class="model-name">'68 Copo Camaro Custom</h3>
+                    <div class="card-footer">
+                        <span class="price">Bid: $85.00</span>
+                        <button class="add-to-cart">Bid Now</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1622615438812-7065fc8e4d3c?q=80&w=600&auto=format&fit=crop"
+                        alt="Yellow VW Beetle Toy" loading="lazy">
+                    <div class="card-overlay">
+                        <button class="action-btn" title="View 3D"><i class="fa-solid fa-cube"></i></button>
+                        <button class="action-btn" title="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="brand">Volkswagen</p>
+                    <h3 class="model-name">Custom Beetle Mooneyes</h3>
+                    <div class="card-footer">
+                        <span class="price">$25.00</span>
+                        <button class="add-to-cart"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=600&auto=format&fit=crop"
+                        alt="Grey Porsche Diecast" loading="lazy">
+                    <div class="card-overlay">
+                        <button class="action-btn" title="View 3D"><i class="fa-solid fa-cube"></i></button>
+                        <button class="action-btn" title="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="brand">Porsche</p>
+                    <h3 class="model-name">911 GT3 RS Matte Grey</h3>
+                    <div class="card-footer">
+                        <span class="price">$35.00</span>
+                        <button class="add-to-cart"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 5 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <div class="badge">New Release</div>
+                    <!-- Updated with a proper classic racing GT40/Sports car picture -->
+                    <img src="https://images.unsplash.com/photo-1544882583-4aae90d9a6ca?q=80&w=600&auto=format&fit=crop"
+                        alt="Ford GT40 Mk IV Diecast" loading="lazy">
+                    <div class="card-overlay">
+                        <button class="action-btn" title="View 3D"><i class="fa-solid fa-cube"></i></button>
+                        <button class="action-btn" title="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="brand">Ford</p>
+                    <h3 class="model-name">GT40 Mk IV Racing</h3>
+                    <div class="card-footer">
+                        <span class="price">$45.00</span>
+                        <button class="add-to-cart"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 6 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?q=80&w=600&auto=format&fit=crop"
+                        alt="Green Hot Wheels" loading="lazy">
+                    <div class="card-overlay">
+                        <button class="action-btn" title="View 3D"><i class="fa-solid fa-cube"></i></button>
+                        <button class="action-btn" title="Compare"><i class="fa-solid fa-code-compare"></i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="brand">Dodge</p>
+                    <h3 class="model-name">Charger R/T Custom Green</h3>
+                    <div class="card-footer">
+                        <span class="price">$22.00</span>
+                        <button class="add-to-cart"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="section-footer">
+            <a href="#shop" class="btn-outline">View Complete Catalog</a>
+        </div>
+    </section>
+
+    <!-- Customizer Sneak Peek -->
+    <section id="customizer" class="customizer-section">
+        <div class="customizer-content">
+            <h2 class="section-title">BUILD YOUR <br><span class="text-blue">DREAM CASTING.</span></h2>
+            <p>Access our real-time 3D Customization Studio. Swap real-rider wheels, apply Spectraflame paint, and add
+                custom decals. The price updates dynamically as you build.</p>
+            <ul class="feature-list">
+                <li><i class="fa-solid fa-check text-orange"></i> Live 360° Rendering</li>
+                <li><i class="fa-solid fa-check text-orange"></i> 50+ Real-Rider Wheel Options</li>
+                <li><i class="fa-solid fa-check text-orange"></i> Color-Shifting & Matte Finishes</li>
+            </ul>
+            <a href="#studio" class="btn-primary mt-2">Launch Studio <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="customizer-visual">
+            <div class="glass-mockup">
+                <!-- Concept placeholder for Customizer UI -->
+                <img src="https://images.unsplash.com/photo-1567807952402-95dd6b3fcb5c?q=80&w=800&auto=format&fit=crop"
+                    alt="3D Customizer Interface" class="ui-image">
+                <div class="floating-ui-picker">
+                    <div class="color-swatch" style="background: #ff4500;"></div>
+                    <div class="color-swatch" style="background: #1e90ff;"></div>
+                    <div class="color-swatch" style="background: #32cd32;"></div>
+                    <div class="color-swatch selected" style="background: #8a2be2;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-hot">HOT</span><span class="logo-wheels">WHEELS</span><span
+                        class="logo-dot">.</span>
+                </div>
+                <p>The ultimate destination for 1:64 scale collectors. Buy, customize, and join the elite Wheelerz
+                    community.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">Diecast Models</a></li>
+                    <li><a href="#">Accessories & Cases</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">New Releases</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#collaborations">Partners & Collaborators</a></li>
+                    <li><a href="#wheelerz">Wheelerz Membership</a></li>
+                    <li><a href="#contact">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe for drop alerts and exclusive casting news.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hot Wheels E-Commerce Project. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JS for Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Launch Timer Logic
+        const timerEl = document.querySelector('.timer');
+        let timeRemaining = 18 * 3600 + 42 * 60 + 9; // Initialize with 18:42:09 default
+        if (timerEl) {
+            setInterval(() => {
+                if (timeRemaining > 0) timeRemaining--;
+                const h = Math.floor(timeRemaining / 3600).toString().padStart(2, '0');
+                const m = Math.floor((timeRemaining % 3600) / 60).toString().padStart(2, '0');
+                const s = (timeRemaining % 60).toString().padStart(2, '0');
+                timerEl.textContent = `${h}:${m}:${s}`;
+            }, 1000);
+        }
+
+        // Customization Port Logic
+        const customizerImg = document.querySelector('.ui-image');
+        const swatches = document.querySelectorAll('.color-swatch');
+
+        // CSS hue-rotate filters for demo purposes
+        const colorFilters = [
+            'hue-rotate(30deg)',    // Orange (shifting from red)
+            'hue-rotate(210deg)',   // Blue
+            'hue-rotate(120deg)',   // Green
+            'hue-rotate(270deg)'    // Purple
+        ];
+
+        swatches.forEach((swatch, index) => {
+            swatch.addEventListener('click', (e) => {
+                // Remove selected from all
+                swatches.forEach(s => s.classList.remove('selected'));
+                // Add to clicked
+                e.target.classList.add('selected');
+
+                // Change customizer image filter
+                if (customizerImg) {
+                    customizerImg.style.transition = 'filter 0.4s ease-in-out';
+                    customizerImg.style.filter = `drop-shadow(0 0 15px rgba(255,255,255,0.1)) ${colorFilters[index]}`;
+                }
+            });
+        });
+
+        // Drifting Car Mouse Trail Effect
+        const driftCar = document.createElement('div');
+        driftCar.innerHTML = '<img src="https://cdn.pixabay.com/photo/2012/04/12/23/47/car-30984_1280.png" width="40" alt="Drift Car" style="transform: rotate(90deg) drop-shadow(0 0 10px rgba(0,0,0,0.5)); display: block;">';
+        driftCar.className = 'mouse-trail';
+        document.body.appendChild(driftCar);
+
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        let carX = mouseX;
+        let carY = mouseY;
+        let carAngle = 0;
+
+        window.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateTrails() {
+            let vx = mouseX - carX;
+            let vy = mouseY - carY;
+
+            // Move car towards mouse (lag effect)
+            carX += vx * 0.15;
+            carY += vy * 0.15;
+
+            let speed = Math.sqrt(vx * vx + vy * vy);
+
+            if (speed > 1) {
+                // Calculate movement direction
+                let targetAngle = Math.atan2(vy, vx) * (180 / Math.PI);
+
+                // Determine drift (slip angle)
+                let angleDiff = targetAngle - carAngle;
+                // Normalize to -180 to 180
+                angleDiff = (angleDiff + 540) % 360 - 180;
+
+                // Smooth rotational tracking
+                carAngle += angleDiff * 0.2;
+
+                // Drift logic: if velocity is high and turning, body angle slips
+                let driftOffset = 0;
+                if (speed > 10) {
+                    driftOffset = angleDiff * 0.8; // body over-rotates
+                }
+
+                let renderAngle = carAngle + driftOffset;
+
+                // Create smoke
+                if (Math.abs(driftOffset) > 5 && speed > 5) {
+                    createSmoke(carX, carY);
+                }
+
+                // Apply transform
+                driftCar.style.transform = `translate(-50%, -50%) rotate(${renderAngle}deg)`;
+            }
+
+            driftCar.style.left = carX + 'px';
+            driftCar.style.top = carY + 'px';
+
+            requestAnimationFrame(animateTrails);
+        }
+
+        function createSmoke(x, y) {
+            const smoke = document.createElement('div');
+            smoke.className = 'smoke-particle';
+            // slight random trailing offset
+            smoke.style.left = (x + (Math.random() * 20 - 10)) + 'px';
+            smoke.style.top = (y + (Math.random() * 20 - 10)) + 'px';
+            document.body.appendChild(smoke);
+
+            setTimeout(() => {
+                smoke.remove();
+            }, 800);
+        }
+
+        animateTrails();
+    </script>
+</body>
+
+</html>
