@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="password" id="passwordInput" maxlength="10">
+    <button onclick="checkPassword()">Check</button>
+    <p id="resultMessage"></p>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('passwordInput').value;
+            const hasUpperCase = /[A-Z]/.test(password);
+            const resultElement = document.getElementById('resultMessage');
+
+            if (hasUpperCase) {
+                resultElement.textContent = "Valid: Contains uppercase letter.";
+                resultElement.style.color = "green";
+            } else {
+                resultElement.textContent = "Invalid: Must contain an uppercase letter.";
+                resultElement.style.color = "red";
+            }
+        }
+    </script>
+</body>
+
+</html>
