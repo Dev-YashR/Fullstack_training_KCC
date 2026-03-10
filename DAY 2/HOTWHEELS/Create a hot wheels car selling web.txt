@@ -1,9 +1,0 @@
-Create a hot wheels car selling website where customer can buy, compare and resell their hotwheels car models.Use 3d car models of HOTWHEELS TOY CARS.There should be zero difference. There is an option to customize the car and according to their customization the price should be marked. for every limited edition hotwheels car launches ,there should be small auction for the few premium members selected. For a normal customer there should be a normal hotwheels car launch countdowns and number of pre bookings and a booking price with some free freebies related to hotwheels.In a website there is option to become community member by buying a premium membership named- WHEELERZ  and get latest news,launches notices,meetups for collection showing,connections. The site should also show collaborators like Big Boys Toys(BBT),BMW,MERCEDES,FERRARI,LAMBORGHINI,ROLLROYCE,FORD,MITSUBISHI-- all with their logos.THE logo must be real and used effectively with their name.
-
-the website should contain about page,contact page,colaboration/partner page, add to cart page and also a customization page where hotwheels car customized using different colors,metallic upgrades and design customization. Also include a in built accessories shop page to buy glass boxes with or without rgb lights to keep the  toy car model inside it, table stands for those toy cars, small brushes to keep the car model clean etc.
-customization should be done like this: https://youtube.com/shorts/e_2fMf0fFlY?si=klOYcAJguaS_zSJe
-
-These are website tutorial links, I want it like this.
-
-https://www.youtube.com/shorts/wigRHyc4mSU
-https://www.youtube.com/shorts/J_sUiY1O24s
